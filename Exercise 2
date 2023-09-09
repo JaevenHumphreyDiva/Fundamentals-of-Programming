@@ -1,0 +1,19 @@
+Name = input('Name of the Student:')
+Science = input('Grade in Science:')
+Math = input('Grade in Math:')
+English = input('Grade in English:')
+Total = float(Science) + float(Math) + float(English)
+Average = float(Total) / 3
+
+print ('Name:',Name)
+print ('Science:',Science)
+print ('Math:',Math)
+print ('English:',English)
+print('Total:',Average)
+
+print ('Average=',round(Average, 2),'%')
+
+if Average > 75:
+    print("Congratulations!!")
+if Average < 75:
+    print("Sorry you fail. D:")

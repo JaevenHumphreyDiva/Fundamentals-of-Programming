@@ -1,0 +1,10 @@
+user_input = input('Please Enter:')
+u=0
+l=0
+for i in user_input:
+    if i.isupper():
+        u=u+1
+    elif i.islower():
+        l=l+1
+print('No. of Uppercase',u)
+print('No. of Lowercase',l)

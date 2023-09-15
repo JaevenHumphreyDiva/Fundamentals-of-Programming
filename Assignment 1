@@ -1,0 +1,30 @@
+print('Welcome')
+name = input('Name:')
+year = int(input("Number of years in service:"))
+print('Select an Office: [IT]  [ACCT]  [HR]')
+office = input('Enter Office:')
+
+IT = (10000, 5000)
+ACCT = (12000, 6000)
+HR = (15000, 7500)
+
+print('Employee', name)
+print('Work in' + ' ' + office.upper() + ' ' + 'office for' + ' ' + str(year) + ' ' + 'years')
+
+if office.upper() == 'IT':
+    if year >= 10:
+        print('Salary:', IT[0])
+    else:
+        print('Salary:', IT[1])
+
+elif office.upper() == 'ACCT':
+    if year >= 10:
+        print('Salary:', ACCT[0])
+    else:
+        print('Salary:', ACCT[1])
+
+elif office.upper() == 'HR':
+    if year >= 10:
+        print('Salary:', HR[0])
+    else:
+        print('Salary:', HR[1])

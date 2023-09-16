@@ -1,30 +1,29 @@
-records = {}
+RECORDS = {}
 
 print ('+----------+')
 print ('| RECORDS  |')
 print ('+----------+')
 
-
 while True:
     choice = input('Enter "add" to add data, "delete" to delete data, or "end" to exit: ')
 
     if choice == 'add':
-        key = input('Enter key: ')
-        value = input('Enter value: ')
-        records[key] = value
-        print(f'Added: {key}: {value}')
+        key = input('Put key: ')
+        value = input('Put value: ')
+        RECORDS[key] = value
+        print('Added: ',(RECORDS[key]))
 
     elif choice == 'delete':
-        key = input('Enter key to delete: ')
-        if key in records:
-            del records[key]
-            print(f'Deleted: {key}')
+        key = input('Put key to delete: ')
+        if key in RECORDS:
+            del RECORDS[key]
+            print('Deleted:', key)
         else:
-            print('Key not found in records.')
+            print('Key does not exist in records.')
 
     elif choice == 'end':
         break
     else:
         print('Invalid choice. Please enter "add", "delete", or "end".')
 
-print('Final records:', records)
+print('Records:', RECORDS)

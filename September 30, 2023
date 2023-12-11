@@ -1,0 +1,21 @@
+name1= input("Enter Full Name:")
+email1 = input("Enter Email:")
+# print("name:", name)
+# print("Email:", email)
+
+name = "Yume"
+food = "Burger"
+game = "Proseka"
+
+sampleText1 = "My name is {}, My email is {}."
+sampleText1a = sampleText1.format(name1, email1)
+print(sampleText1a)
+
+sampleText2 = "My name is {}, I love {} and playing {}."
+sampleText2a = sampleText2.format(name, food, game)
+print(sampleText2a)
+
+
+sampleText3 = "My name is {newname}, I love {newfood} and playing {newgame}."
+sampleText3a = sampleText3.format(newname="Cheri",newfood= "Spaghetti", newgame= "Geometry dash")
+print(sampleText3a)
